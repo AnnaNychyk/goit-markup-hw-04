@@ -39,6 +39,10 @@ body {
   text-decoration: none;
 }
 
+.hidden {
+  display: none;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -47,7 +51,9 @@ body {
   padding-right: 15px;
 }
 
-/* Header logo */
+/* ---------------Header--------------- */
+
+/* ---------------Logo--------------- */
 .header{
   border-bottom: 1px solid #ECECEC;
   padding-top: 24px;
@@ -70,7 +76,7 @@ body {
   color: var(--accent-text-color);
 }
 
-/* Site-nav */
+/* ---------------Site-nav--------------- */
 .site-nav .link {
   color: var(--primary-text-color);
 }
@@ -106,6 +112,7 @@ body {
   align-items: center;
 }
 
+/* ---------------Auth-nav--------------- */
 .auth-nav {
   display: flex;
 }
@@ -127,7 +134,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* Hero */
+/* ---------------Hero--------------- */
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -171,7 +178,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-/* Quality and Work and Team */
+/* ---------------Quality--------------- */
 
 .quality-title {
   margin-top: 0;
@@ -211,6 +218,7 @@ body {
   margin-left: 30px;
 }
 
+/* ---------------Work--------------- */
 .title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -228,6 +236,15 @@ body {
   padding-bottom: 94px;
 }
 
+.work-items {
+  display: flex;
+}
+
+.work-items .item+.item {
+  margin-left: 30px;
+}
+
+/* ---------------Team--------------- */
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -236,14 +253,6 @@ body {
 .sign{
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-.work-items {
-  display: flex;
-}
-
-.work-items .item + .item {
-  margin-left: 30px;
 }
 
 .team-title {
@@ -275,7 +284,7 @@ body {
   margin-left: 30px;
 }
 
-/* Footer */
+/* ---------------Footer--------------- */
 .footer {
   background-color: var(--bgc-hero-footer);
   padding-top: 60px;
@@ -325,14 +334,10 @@ body {
   color: var(--accent-text-color);
 }
 
-/* Projects */
+/* ---------------Projects--------------- */
 .projects{
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.hidden {
-  display: none;
 }
 
 .projects-title {
