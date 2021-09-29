@@ -52,7 +52,6 @@ body {
 }
 
 /* ---------------Header--------------- */
-
 /* ---------------Logo--------------- */
 .header{
   border-bottom: 1px solid #ECECEC;
@@ -132,6 +131,37 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.svg-p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mail, 
+.tel{
+  margin: 0;
+}
+
+.envelope{
+  fill: var(--secondary-text-color);
+  margin-right: 10px;
+}
+
+.envelope:hover,
+.envelope:active{
+  fill: var(--accent-text-color);
+}
+
+.smartphone{
+  fill: var(--secondary-text-color);
+  margin-right: 10px;
+}
+
+.smartphone:hover,
+.smartphone:active{
+  fill: var(--accent-text-color);
 }
 
 /* ---------------Hero--------------- */
@@ -282,6 +312,30 @@ body {
 
 .team-items .item + .item {
   margin-left: 30px;
+}
+
+/* ---------------Clients--------------- */
+.clients{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.company{
+  display: flex;
+  margin-right: calc(-1 * var(--card-gap)); 
+}
+
+.company .company-logo{
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+
+  flex-basis: calc(100% / 6 - var(--card-gap));
+  margin-right: var(--card-gap);
+}
+
+.yaco{
+  justify-content: center;
 }
 
 /* ---------------Footer--------------- */
