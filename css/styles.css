@@ -152,7 +152,7 @@ body {
 }
 
 .svg-p:hover .envelope,
-.svg-p:active .envelope{
+.svg-p:focus .envelope{
   fill: var(--accent-text-color);
 }
 
@@ -162,7 +162,7 @@ body {
 }
 
 .svg-p:hover .smartphone,
-.svg-p:active .smartphone {
+.svg-p:focus .smartphone {
   fill: var(--accent-text-color);
 }
 
@@ -172,6 +172,7 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
+  margin: 0 auto;
 
   background-image: linear-gradient(to right, 
                     rgba(47, 48, 58, 0.4), 
@@ -256,13 +257,15 @@ body {
   margin-left: 30px;
 }
 
-.icon-box{
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
-  padding: 25px 100px;
-  width: 270px;
-  height: 120px;
   background-color: #F5F4FA;
   border-radius: 4px;
+  width: 270px;
+  height: 120px;
 }
 
 /* ---------------Work--------------- */
@@ -295,8 +298,7 @@ body {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: #F5F4FA;
-  max-width: 1600px;
+  background-color: #ffffff;
 }
 
 .sign{
@@ -351,7 +353,11 @@ body {
   margin-top: 16px;
 }
 
-.social{
+.social-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 44px;
   height: 44px;
   background-color: var(--white-text-color);
@@ -363,13 +369,13 @@ body {
   fill: #AFB1B8;
 }
 
-.social:hover,
-.social:active{
+.social-link:hover,
+.social-link:focus{
 background-color: var(--accent-text-color);
 }
 
-.social:hover .network,
-.social:active .network {
+.social-link:hover .network,
+.social-link:focus .network {
   fill: #fff;
 }
 
@@ -387,7 +393,7 @@ background-color: var(--accent-text-color);
   margin-right: calc(-1 * var(--card-gap)); 
 }
 
-.company .company-logo{
+.company .company-link{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -404,13 +410,13 @@ background-color: var(--accent-text-color);
   fill: #afb1b8;
 }
 
-.company-logo:hover,
-.company-logo:focus {
+.company-link:hover,
+.company-link:focus {
   border: 1px solid #2196F3;
 }
 
-.company-logo:hover .company-item,
-.company-logo:focus .company-item {
+.company-link:hover .company-item,
+.company-link:focus .company-item {
   fill: var(--accent-text-color);
 }
 
@@ -501,7 +507,7 @@ background-color: var(--accent-text-color);
   margin-left: 10px;
 }
 
-.footer-social{
+.footer-social-link{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -511,8 +517,8 @@ background-color: var(--accent-text-color);
   border-radius: 50%;
 }
 
-.footer-social:hover,
-.footer-social:active{
+.footer-social-link:hover,
+.footer-social-link:focus{
   background-color: var(--accent-text-color);
 }
 
